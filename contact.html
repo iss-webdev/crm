@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM - Contacts</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <h2>CRM Tool</h2>
+        <nav>
+            <a onclick="window.location.href = 'index.html'">Dashboard</a>
+            <a onclick="window.location.href = 'Contact.html'" class="active">Contacts</a>
+            <a onclick="window.location.href = 'tasks.html'">Tasks</a>
+            <a onclick="window.location.href = 'reports.html'">Reports</a>
+        </nav>
+    </aside>
+
+    <div class="container">
+        <h1>Contacts</h1>
+
+        <form class="contact-form">
+            <input id="name" type="text" placeholder="Full Name" required>
+            <input id="email" type="email" placeholder="Email Address" required>
+            <input id="phone" type="tel" placeholder="Phone Number" size="10" required>
+            <select id="options" required>
+                <option value="">Select Status</option>
+                <option id="lead">Lead</option>
+                <option id="active">Active</option>
+                <option id="inactive">Inactive</option>
+            </select>
+            <button id="btn" type="submit">Add Contact</button>
+        </form>
+
+        <table class="contacts-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+        </table>
+        <!-- <tbody>
+        <tr>
+          <td>Jane Doe</td>
+          <td>jane@example.com</td>
+          <td>+91 9876543210</td>
+          <td><span class="status active">Active</span></td>
+        </tr>
+        <tr>
+          <td>John Smith</td>
+          <td>john@example.com</td>
+          <td>+91 9123456789</td>
+          <td><span class="status lead">Lead</span><span><i class=" delete-btn fa-solid fa-trash"></i><Span></td>
+        </tr>
+      </tbody>
+        </table> -->
+    </div>
+<script src="contact.js"></script>
+</body>
+
+</html>
