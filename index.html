@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRM Tool</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>CRM Tool</h2>
+    <nav>
+      <a href="#" class="active">Dashboard</a>
+      <a onclick="window.location.href = 'Contact.html'" >Contacts</a>
+      <a onclick="window.location.href = 'tasks.html'" >Tasks</a>
+      <a onclick="window.location.href = 'reports.html'">Reports</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <header>
+      <h1>Dashboard</h1>
+      <input type="search" placeholder="Search contacts...">
+    </header>
+
+    <!-- Stats Cards -->
+    <section class="stats">
+      <div class="card">
+        <h3>Total Contacts</h3>
+        <p>120</p>
+      </div>
+      <div class="card">
+        <h3>Active Deals</h3>
+        <p>8</p>
+      </div>
+      <div class="card">
+        <h3>Closed Deals</h3>
+        <p>15</p>
+      </div>
+    </section>
+
+    <!-- Contact Table -->
+    <section class="contacts">
+      <h2>Recent Contacts</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Last Contacted</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jane Doe</td>
+            <td>jane@example.com</td>
+            <td><span class="status active">Active</span></td>
+            <td>2 days ago</td>
+          </tr>
+          <tr>
+            <td>John Smith</td>
+            <td>john@example.com</td>
+            <td><span class="status lead">Lead</span></td>
+            <td>1 week ago</td>
+          </tr>
+          <tr>
+            <td>Mary Johnson</td>
+            <td>mary@example.com</td>
+            <td><span class="status inactive">Inactive</span></td>
+            <td>1 month ago</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
