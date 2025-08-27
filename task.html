@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="tasks.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+    <h2>CRM Tool</h2>
+    <nav>
+      <a onclick="window.location.href = 'index.html'" >Dashboard</a>
+      <a onclick="window.location.href = 'Contact.html'" >Contacts</a>
+      <a onclick="window.location.href = 'tasks.html'" class="active">Tasks</a>
+      <a onclick="window.location.href = 'reports.html'">Reports</a>
+    </nav>
+  </aside>
+    
+<div class="container">
+  <h1>Tasks</h1>
+
+  <form class="task-form">
+    <input class="text" type="text" placeholder="New Task..." required>
+    <button class="btn" type="submit">Add Task</button>
+  </form>
+
+  <ul class="task-list">
+    <!-- <li>
+      Call client about proposal
+      <span class="status pending">Pending</span>
+      <span><i class=" tick-btn fa-solid fa-check"></i></span><span><i class="edit-btn fa-solid fa-pen-to-square"></i></span>
+    </li>
+    <li>
+      Send contract for SEO package
+      <span class="status completed">Completed</span>
+      <span><i class=" tick-btn fa-solid fa-check"></i></span><span><i class="edit-btn fa-solid fa-pen-to-square"></i></span>
+    </li> -->
+  </ul>
+</div>
+
+  <script src="tasks.js"></script>
+</body>
+</html>
